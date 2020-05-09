@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/animresim"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hat" />
+
+    <Button
+        android:id="@+id/btn_hesaplaOrtalamaanim"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounden_button"
+        android:onClick="ortalamaHesapla"
+        android:text="Ortalama Hesapla"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animresim" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
